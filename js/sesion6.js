@@ -109,3 +109,8 @@ const triangle = new Triangle(1, 2, 3);
 
 console.log(triangle); // Triangle { a: 1, b: 2, c: 3 }
 console.log(triangle.getPerimeter()); // 6
+
+
+
+//crear clase stack push, pop, peak, print
+// crear clase queue
