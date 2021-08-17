@@ -1,20 +1,72 @@
 <html>
 <head>
   <meta charset="utf8"/>
-  
-  <title>Reto 1: Inflar un globo</title>
-  <style>
-    #globo{
+  <title>Reto 2: Modal</title>
+</head>
+<body>
+<style>
+  #globo{
       font-size: 20px;
       max-width: 250px;
       max-height: 250px;
       overflow: hidden;
     }
-  </style>
-</head>
-<body>
+  #modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
 <p id="globo">🎈</p>
+<hr>
+<h1>Modal</h1>
+
+<button>Open modal</button>
+
+<div id="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-image" />
+</div>
+<hr>
+<br><br><br>
+
+<div id="tab-panel">
+  <div data-tabname="First">Tab one</div>
+  <div data-tabname="Second">Tab two</div>
+  <div data-tabname="Third">Tab three</div>
+</div>
 
 <script src="./js/sesion10.js"></script>
 </body>
