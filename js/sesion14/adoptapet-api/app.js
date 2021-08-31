@@ -9,6 +9,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //se parsean los bodys a json
 app.use(bodyParser.json());
 
+app.use('/v1', require('./routes'));
+
 //decimos cómo/dónde se va a ejecutar la app
 //definimos el puerto 
 const PORT = 4001;
